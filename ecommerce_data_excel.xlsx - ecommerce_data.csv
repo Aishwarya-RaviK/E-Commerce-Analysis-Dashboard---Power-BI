@@ -1,0 +1,35 @@
+1. Clustered column chart with sales and profit per product,Clustered column chart
+2. Map chart to visualise which area had higher revenue,Map chart to
+3. Delivery status count over products ,Line graph
+4. Top 5 highest selling product,Table
+5. KPI Revenue,Cards
+6. Target over profit,Cards
+7. Difference between order date and ,
+,
+DAX Measures,
+Shipping Latency: Calculate the difference between Order Date and Shipping Date. This helps identify bottlenecks in your fulfillment.,
+,
+"Total Profit: Since you have Profit per Unit and Quantity Purchased, you’ll need a calculated column or measure:",
+,
+{Total Profit} = {Profit per Unit} * {Quantity Purchased}),
+Discount Impact: Compare Order Item Discount against Quantity Purchased to see if deep discounts actually drive volume or just kill your margins.,
+,
+"KPI Cards: Total Sales, Total Profit, Average Shipping Days, and Total Orders.",
+,
+Sales by Region: A Map or Bar Chart showing where the money is coming from.,
+,
+"Sales Trend: A Line Chart using Order Date to see seasonality (e.g., ""Do we spike in Q4?"").",
+,
+"Shipment Type Performance: A Donut chart showing the split between Express, Standard, etc.",
+,
+Delivery Speed by Region: A Matrix or Heatmap showing which regions suffer from slow shipping.,
+,
+"Profitability vs. Shipping Type: Are you losing all your profit on ""Free Express Shipping""?",
+,
+Product Type Breakdown: A Treemap showing which categories dominate sales.,
+,
+"Profitability Scatter Plot: Plot Sales per Order on the X-axis and Profit on the Y-axis. This identifies ""Stars"" (High Sales/High Profit) and ""Dogs"" (High Sales/Low Profit).",
+,
+Discount vs. Sales: A correlation chart to see if your discounts are actually working.,
+,
+"SlicersAdd a Date Range slicer and a Region slicer at the top of every page.Drill-ThroughLet users right-click a Region to go to a detailed ""Region Page.""TooltipsCreate a custom tooltip so when someone hovers over a Product Type, they see the top 3 items in that category.Decomposition TreeGreat for ""Breaking down"" Profit by Region ? Product Type ? Shipment Type.",

@@ -74,7 +74,7 @@ This dashboard helps answer key business questions such as:
 
 ## 📷 Dashboard Preview
 
-![Dashboard Preview](dashboard.png)
+![Dashboard Preview] (E-COMMERCE JPEG .png)
 
 ---
 
